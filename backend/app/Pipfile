@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+fastapi = {extras = ["all"],version = "*"}
+pyjwt = "*"
+passlib = {extras = ["bcrypt"],version = "*"}
+python-dotenv = "*"
+sqlalchemy = "*"
+bcrypt = "*"
+alembic = "*"
+psycopg2 = "*"
+
+[requires]
+python_version = "3.7"

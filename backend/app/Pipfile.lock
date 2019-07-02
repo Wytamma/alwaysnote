@@ -1,0 +1,203 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "95afa9d387b56cfce2d0d8a433254bf5e19fdf56fbaa840312615b7800bce01f"
+        },
+        "host-environment-markers": {
+            "implementation_name": "cpython",
+            "implementation_version": "3.7.3",
+            "os_name": "posix",
+            "platform_machine": "x86_64",
+            "platform_python_implementation": "CPython",
+            "platform_release": "18.6.0",
+            "platform_system": "Darwin",
+            "platform_version": "Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64",
+            "python_full_version": "3.7.3",
+            "python_version": "3.7",
+            "sys_platform": "darwin"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "aiofiles": {
+            "hashes": [],
+            "version": "==0.4.0"
+        },
+        "aniso8601": {
+            "hashes": [],
+            "version": "==5.1.0"
+        },
+        "bcrypt": {
+            "hashes": [],
+            "version": "==3.1.6"
+        },
+        "certifi": {
+            "hashes": [],
+            "version": "==2019.3.9"
+        },
+        "cffi": {
+            "hashes": [],
+            "version": "==1.12.3"
+        },
+        "chardet": {
+            "hashes": [],
+            "version": "==3.0.4"
+        },
+        "click": {
+            "hashes": [],
+            "version": "==7.0"
+        },
+        "dataclasses": {
+            "hashes": [],
+            "version": "==0.6"
+        },
+        "dnspython": {
+            "hashes": [],
+            "version": "==1.16.0"
+        },
+        "email-validator": {
+            "hashes": [],
+            "version": "==1.0.4"
+        },
+        "fastapi": {
+            "hashes": [],
+            "version": "==0.29.0"
+        },
+        "graphene": {
+            "hashes": [],
+            "version": "==2.1.5"
+        },
+        "graphql-core": {
+            "hashes": [],
+            "version": "==2.2"
+        },
+        "graphql-relay": {
+            "hashes": [],
+            "version": "==0.4.5"
+        },
+        "h11": {
+            "hashes": [],
+            "version": "==0.8.1"
+        },
+        "httptools": {
+            "hashes": [],
+            "version": "==0.0.13"
+        },
+        "idna": {
+            "hashes": [],
+            "version": "==2.8"
+        },
+        "itsdangerous": {
+            "hashes": [],
+            "version": "==1.1.0"
+        },
+        "jinja2": {
+            "hashes": [],
+            "version": "==2.10.1"
+        },
+        "markupsafe": {
+            "hashes": [],
+            "version": "==1.1.1"
+        },
+        "passlib": {
+            "hashes": [],
+            "version": "==1.7.1"
+        },
+        "promise": {
+            "hashes": [],
+            "version": "==2.2.1"
+        },
+        "psycopg2": {
+            "hashes": [],
+            "version": "==2.8.2"
+        },
+        "pycparser": {
+            "hashes": [],
+            "version": "==2.19"
+        },
+        "pydantic": {
+            "hashes": [],
+            "version": "==0.26"
+        },
+        "pyjwt": {
+            "hashes": [],
+            "version": "==1.7.1"
+        },
+        "python-dateutil": {
+            "hashes": [],
+            "version": "==2.8.0"
+        },
+        "python-dotenv": {
+            "hashes": [],
+            "version": "==0.10.3"
+        },
+        "python-multipart": {
+            "hashes": [],
+            "version": "==0.0.5"
+        },
+        "pyyaml": {
+            "hashes": [],
+            "version": "==5.1.1"
+        },
+        "relativetimebuilder": {
+            "hashes": [],
+            "version": "==1.0.0"
+        },
+        "requests": {
+            "hashes": [],
+            "version": "==2.22.0"
+        },
+        "rx": {
+            "hashes": [],
+            "version": "==1.6.1"
+        },
+        "six": {
+            "hashes": [],
+            "version": "==1.12.0"
+        },
+        "sqlalchemy": {
+            "hashes": [],
+            "version": "==1.3.4"
+        },
+        "starlette": {
+            "hashes": [],
+            "version": "==0.12.0"
+        },
+        "typing": {
+            "hashes": [],
+            "markers": "python_version < '3.5'",
+            "version": "==3.6.6"
+        },
+        "ujson": {
+            "hashes": [],
+            "version": "==1.35"
+        },
+        "urllib3": {
+            "hashes": [],
+            "version": "==1.25.3"
+        },
+        "uvicorn": {
+            "hashes": [],
+            "version": "==0.7.2"
+        },
+        "uvloop": {
+            "hashes": [],
+            "version": "==0.12.2"
+        },
+        "websockets": {
+            "hashes": [],
+            "version": "==7.0"
+        }
+    },
+    "develop": {}
+}
