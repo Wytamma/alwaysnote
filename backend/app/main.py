@@ -14,7 +14,6 @@ app = FastAPI(title="Alwaysnote API", version='0.2.3')
 
 # CORS
 origins = []
-
 # Set all CORS enabled origins
 if config.BACKEND_CORS_ORIGINS:
     origins_raw = config.BACKEND_CORS_ORIGINS.split(",")
