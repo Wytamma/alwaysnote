@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-fastapi = {extras = ["all"],version = "0.29.1"}
+fastapi = {extras = ["all"],version = "==0.29.1"}
 pyjwt = "*"
 passlib = {extras = ["bcrypt"],version = "*"}
 python-dotenv = "*"
