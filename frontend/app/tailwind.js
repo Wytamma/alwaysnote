@@ -351,7 +351,7 @@ module.exports = {
         |
         */
 
-        textColor: colors,
+        textColor: theme => theme('colors'),
 
 
         /*
@@ -368,7 +368,7 @@ module.exports = {
         |
         */
 
-        backgroundColor: colors,
+        backgroundColor: theme => theme('colors'),
 
 
         /*
@@ -433,7 +433,10 @@ module.exports = {
         |
         */
 
-        borderColor: global.Object.assign({ default: colors['grey-light'] }, colors),
+       borderColor: theme => ({
+            default: theme('colors.grey-light'),
+            ...theme('colors'),
+        }),
 
 
         /*
