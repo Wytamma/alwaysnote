@@ -13,20 +13,6 @@ we've done our very best to explain each section.
 View the full documentation at https://tailwindcss.com.
 
 
-|-------------------------------------------------------------------------------
-| The default config
-|-------------------------------------------------------------------------------
-|
-| This variable contains the default Tailwind config. You don't have
-| to use it, but it can sometimes be helpful to have available. For
-| example, you may choose to merge your custom configuration
-| values with some of the Tailwind defaults.
-|
-*/
-
-let defaultConfig = require('tailwindcss/defaultConfig')
-
-
 /*
 |-------------------------------------------------------------------------------
 | Colors                                    https://tailwindcss.com/docs/colors
@@ -44,12 +30,6 @@ let defaultConfig = require('tailwindcss/defaultConfig')
 */
 
 module.exports = {
-    prefix: '',
-
-    important: false,
-
-    separator: ':',
-
     theme: {
 
         /*
@@ -791,30 +771,6 @@ module.exports = {
             '40': 40,
             '50': 50,
         },
-
-
-        /*
-        |-----------------------------------------------------------------------------
-        | Opacity                                https://tailwindcss.com/docs/opacity
-        |-----------------------------------------------------------------------------
-        |
-        | Here is where you define your opacity utility values. By default we
-        | provide a sensible numeric scale. You can, of course, modify these
-        | values as needed.
-        |
-        | Class name: .opacity-{name}
-        | CSS property: opacity
-        |
-        */
-
-        opacity: {
-            '0': '0',
-            '25': '.25',
-            '50': '.5',
-            '75': '.75',
-            '100': '1',
-        },
-
 
         /*
         |-----------------------------------------------------------------------------
