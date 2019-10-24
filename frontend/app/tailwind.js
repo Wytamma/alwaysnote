@@ -183,16 +183,16 @@ module.exports = {
 
         /*
         |-----------------------------------------------------------------------------
-        | Fonts                                    https://tailwindcss.com/docs/fonts
+        | fontFamily                                    https://tailwindcss.com/docs/fontFamily
         |-----------------------------------------------------------------------------
         |
         | Here is where you define your project's font stack, or font families.
-        | Keep in mind that Tailwind doesn't actually load any fonts for you.
-        | If you're using custom fonts you'll need to import them prior to
+        | Keep in mind that Tailwind doesn't actually load any fontFamily for you.
+        | If you're using custom fontFamily you'll need to import them prior to
         | defining them here.
         |
         | By default we provide a native font stack that works remarkably well on
-        | any device or OS you're using, since it just uses the default fonts
+        | any device or OS you're using, since it just uses the default fontFamily
         | provided by the platform.
         |
         | Class name: .font-{name}
@@ -200,7 +200,7 @@ module.exports = {
         |
         */
 
-        fonts: {
+        fontFamily: {
             'sans': [
             'system-ui',
             'BlinkMacSystemFont',
@@ -258,7 +258,7 @@ module.exports = {
         |
         */
 
-        textSizes: {
+        fontSize: {
             'xs': '.75rem',     // 12px
             'sm': '.875rem',    // 14px
             'base': '1rem',     // 16px
@@ -286,7 +286,7 @@ module.exports = {
         |
         */
 
-        fontWeights: {
+        fontWeight: {
             'hairline': 100,
             'thin': 200,
             'light': 300,
@@ -301,18 +301,18 @@ module.exports = {
 
         /*
         |-----------------------------------------------------------------------------
-        | Leading (line height)              https://tailwindcss.com/docs/line-height
+        | lineHeight              https://tailwindcss.com/docs/line-height
         |-----------------------------------------------------------------------------
         |
         | Here is where you define your line height values, or as we call
-        | them in Tailwind, leadings.
+        | them in Tailwind, lineHeights.
         |
-        | Class name: .leading-{size}
+        | Class name: .lineHeight-{size}
         | CSS property: line-height
         |
         */
 
-        leading: {
+        lineHeight: {
             'none': 1,
             'tight': 1.25,
             'normal': 1.5,
@@ -322,18 +322,18 @@ module.exports = {
 
         /*
         |-----------------------------------------------------------------------------
-        | Tracking (letter spacing)       https://tailwindcss.com/docs/letter-spacing
+        | letterSpacing       https://tailwindcss.com/docs/letter-spacing
         |-----------------------------------------------------------------------------
         |
         | Here is where you define your letter spacing values, or as we call
-        | them in Tailwind, tracking.
+        | them in Tailwind, letterSpacing.
         |
-        | Class name: .tracking-{size}
+        | Class name: .letterSpacing-{size}
         | CSS property: letter-spacing
         |
         */
 
-        tracking: {
+        letterSpacing: {
             'tight': '-0.05em',
             'normal': '0',
             'wide': '0.05em',
@@ -354,7 +354,7 @@ module.exports = {
         |
         */
 
-        textColors: colors,
+        textColor: colors,
 
 
         /*
@@ -371,7 +371,7 @@ module.exports = {
         |
         */
 
-        backgroundColors: colors,
+        backgroundColor: colors,
 
 
         /*
@@ -409,7 +409,7 @@ module.exports = {
         |
         */
 
-        borderWidths: {
+        borderWidth: {
             default: '1px',
             '0': '0',
             '2': '2px',
@@ -436,7 +436,7 @@ module.exports = {
         |
         */
 
-        borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+        borderColor: global.Object.assign({ default: colors['grey-light'] }, colors),
 
 
         /*
@@ -743,11 +743,11 @@ module.exports = {
 
         /*
         |-----------------------------------------------------------------------------
-        | Shadows                                https://tailwindcss.com/docs/shadows
+        | boxShadow                                https://tailwindcss.com/docs/boxShadow
         |-----------------------------------------------------------------------------
         |
         | Here is where you define your shadow utilities. As you can see from
-        | the defaults we provide, it's possible to apply multiple shadows
+        | the defaults we provide, it's possible to apply multiple boxShadow
         | per utility using comma separation.
         |
         | If a `default` shadow is provided, it will be made available as the non-
@@ -758,7 +758,7 @@ module.exports = {
         |
         */
 
-        shadows: {
+        boxShadow: {
             default: '0 2px 4px 0 rgba(0,0,0,0.10)',
             'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
             'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
@@ -831,7 +831,7 @@ module.exports = {
         |
         */
 
-        svgFill: {
+        fill: {
             'current': 'currentColor',
         },
 
@@ -851,7 +851,7 @@ module.exports = {
         |
         */
 
-        svgStroke: {
+        stroke: {
             'current': 'currentColor',
         },
     },
@@ -881,23 +881,23 @@ module.exports = {
   variants: {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColors: ['responsive', 'hover', 'focus', 'group-hover'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: [],
-    borderColors: ['responsive', 'hover', 'focus'],
+    borderColor: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
-    borderWidths: ['responsive'],
+    borderWidth: ['responsive'],
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],
     float: ['responsive'],
-    fonts: ['responsive'],
-    fontWeights: ['responsive', 'hover', 'focus'],
+    fontFamily: ['responsive'],
+    fontWeight: ['responsive', 'hover', 'focus'],
     height: ['responsive'],
-    leading: ['responsive'],
+    lineHeight: ['responsive'],
     lists: ['responsive'],
     margin: ['responsive'],
     maxHeight: ['responsive'],
@@ -914,15 +914,15 @@ module.exports = {
     pointerEvents: ['responsive'],
     position: ['responsive'],
     resize: ['responsive'],
-    shadows: ['responsive', 'hover', 'focus'],
-    svgFill: [],
-    svgStroke: [],
+    boxShadow: ['responsive', 'hover', 'focus'],
+    fill: [],
+    stroke: [],
     tableLayout: ['responsive'],
     textAlign: ['responsive'],
-    textColors: ['responsive', 'hover', 'focus', 'group-hover'],
-    textSizes: ['responsive'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    fontSize: ['responsive'],
     textStyle: ['responsive', 'hover', 'focus'],
-    tracking: ['responsive'],
+    letterSpacing: ['responsive'],
     userSelect: ['responsive'],
     verticalAlign: ['responsive'],
     visibility: ['responsive'],
