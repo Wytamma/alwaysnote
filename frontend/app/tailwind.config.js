@@ -39,9 +39,9 @@ module.exports = {
         |
         | The color palette defined above is also assigned to the "colors" key of
         | your Tailwind config. This makes it easy to access them in your CSS
-        | using Tailwind's config helper. For example:
+        | using Tailwind's theme helper. For example:
         |
-        | .error { color: config('colors.red') }
+        | .error { color: theme('colors.red') }
         |
         */
 
