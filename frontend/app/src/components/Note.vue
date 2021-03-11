@@ -1,18 +1,18 @@
 <template>
 <div class="flex flex-col flex-grow bg-white h-screen" >
     <div v-show="note" id='editor' class="flex flex-col flex-grow editor w-full text-left">
-        <div class="bg-white pin-t sticky">
+        <div class="bg-white top-0 sticky">
         <div class="flex justify-end mx-6 border-b h-12">
             <div class="flex items-center">
                 <div v-if="showConfrimDelete">
                     <button @click="deleteNote" class="bg-red-light hover:bg-red text-white font-bold py-2 px-4 mx-2 rounded">
                         Delete
                     </button>
-                    <font-awesome-icon class="cursor-pointer" @click="showConfrimDelete = false" icon="times" size="lg"/> 
+                    <font-awesome-icon class="cursor-pointer" @click="showConfrimDelete = false" icon="times" size="lg"/>
                 </div>
-                <font-awesome-icon v-else @click="showConfrimDelete = true" class="hover:text-red my-1 cursor-pointer " icon="trash" size="lg"/> 
+                <font-awesome-icon v-else @click="showConfrimDelete = true" class="hover:text-red my-1 cursor-pointer " icon="trash" size="lg"/>
             </div>
-            
+
         </div>
         <div class="hidden md:flex items-center mx-6 py-2 justify-center">
         <editor-menu-bar :editor="editor" class="pl-8 flex items-center ">
@@ -36,7 +36,7 @@
                     :class="{ 'bg-green-lightest': isActive.underline() }"
                     @click="commands.underline"
                 >
-                    <font-awesome-icon icon="underline" size='xs' /> 
+                    <font-awesome-icon icon="underline" size='xs' />
                 </button>
 
                 <button
@@ -44,7 +44,7 @@
                     :class="{ 'bg-green-lightest': isActive.code() }"
                     @click="commands.code"
                 >
-                    <font-awesome-icon icon="code" size='xs' /> 
+                    <font-awesome-icon icon="code" size='xs' />
                 </button>
 
                 <button
@@ -52,7 +52,7 @@
                     :class="{ 'bg-green-lightest': isActive.paragraph() }"
                     @click="commands.paragraph"
                 >
-                    <font-awesome-icon icon="paragraph" size='xs' /> 
+                    <font-awesome-icon icon="paragraph" size='xs' />
                 </button>
 
                 <button
@@ -84,7 +84,7 @@
                     :class="{ 'bg-green-lightest': isActive.bullet_list() }"
                     @click="commands.bullet_list"
                 >
-                    <font-awesome-icon icon="list-ul" size='xs' /> 
+                    <font-awesome-icon icon="list-ul" size='xs' />
                 </button>
 
                 <button
@@ -92,7 +92,7 @@
                     :class="{ 'bg-green-lightest': isActive.ordered_list() }"
                     @click="commands.ordered_list"
                 >
-                    <font-awesome-icon icon="list-ol" size='xs' /> 
+                    <font-awesome-icon icon="list-ol" size='xs' />
                 </button>
 
                 <button
@@ -100,7 +100,7 @@
                     :class="{ 'bg-green-lightest': isActive.blockquote() }"
                     @click="commands.blockquote"
                 >
-                    <font-awesome-icon icon="quote-right" size='xs' /> 
+                    <font-awesome-icon icon="quote-right" size='xs' />
                 </button>
 
             </div>
@@ -115,12 +115,12 @@
         </div>
     </div>
     <div id="NoNotes" v-show="!note" @click="newNote" class="flex flex-col flex-grow items-center justify-center cursor-pointer">
-        
+
         <h1>No Notes!</h1>
         <h2>Click here to create a new note</h2>
         <div class="rounded-full h-10 w-10 mt-4 flex items-center justify-center bg-green">
             <span class="text-white group-hover:text-grey-light text-3xl font-medium ">
-            + 
+            +
             </span>
         </div>
     </div>
@@ -200,7 +200,7 @@ export default {
             title: null,
             focus: false,
             content: null,
-            showConfrimDelete: false 
+            showConfrimDelete: false
         }
     },
     beforeDestroy() {
@@ -229,7 +229,7 @@ export default {
                     this.title = ''
                 }
             }
-            
+
         },
         deleteNote () {
             this.$store.dispatch('actionDeleteNote', this.note)
@@ -245,7 +245,7 @@ export default {
         }
     },
     watch: {
-        activeNote: function (newNote, OldNote) {            
+        activeNote: function (newNote, OldNote) {
             this.newActiveNote()
         }
     },

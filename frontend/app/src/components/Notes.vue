@@ -1,12 +1,12 @@
 <template>
     <section id="notes" class="flex flex-col border-r border-grey-light h-64 md:h-screen w-full md:min-w-320px ">
-        <div class="px-6 pb-2 border-b bg-white sticky pin-t border-grey-light">
+        <div class="px-6 pb-2 border-b bg-white sticky top-0 border-grey-light">
             <div class="flex items-center justify-between pt-6 pb-12 ">
-                <div class="text-xl font-medium text-left"> 
+                <div class="text-xl font-medium text-left">
                     All Notes
                 </div>
                 <div @click="hideNotes()" class=" mr-1 cursor-pointer hover:text-grey md:block hidden">
-                    <font-awesome-icon icon="angle-left" size="lg"/> 
+                    <font-awesome-icon icon="angle-left" size="lg"/>
                 </div>
             </div>
             <div class="flex justify-between">
@@ -22,7 +22,7 @@
         </div>
         <div class="flex flex-wrap overflow-auto ">
             <div @click="setActive(note.id)" :class="{ 'bg-grey-lighter': ActiveID == note.id }" class="cursor-pointer hover:bg-grey-lighter w-full text-left border-b border-grey-light px-6"  v-for="note in notes" :key="note.id">
-            <div class="pt-4 pb-1 text-ms font-semibold break-words"> 
+            <div class="pt-4 pb-1 text-ms font-semibold break-words">
                 {{note.title}}
             </div>
             <div class="text-sm h-16 overflow-hidden md:block hidden">
